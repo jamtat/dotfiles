@@ -1,0 +1,22 @@
+html, body, .tree-view, .tab-bar .tab, .status-bar {
+	font-size: 11px;
+}
+
+atom-text-editor {
+	font-family   : "Fira Code";
+	text-rendering: optimizeLegibility;
+	line-height   : 1.6;
+}
+
+atom-text-editor.editor .syntax--string.syntax--quoted,
+atom-text-editor.editor .syntax--string.syntax--regexp {
+	-webkit-font-feature-settings: "liga" off, "calt" off;
+}
+
+atom-text-editor.editor {
+	.syntax--entity.syntax--other.syntax--attribute-name {
+		font-family   : "Operator Mono";
+		letter-spacing: 0.5px;
+		font-style    : italic;
+	}
+}
